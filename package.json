@@ -1,0 +1,12 @@
+{
+  "name": "framework-spl",
+  "version": "2.10202.0",
+  "description": "Standard Peripheral Library for ST STM32 microcontrollers",
+  "keywords": [
+    "framework",
+    "hal",
+    "stm32",
+    "st"
+  ],
+  "homepage": "http://www.st.com/web/catalog/tools/FM147/CL1794/SC961/SS1743/PF257890"
+}
