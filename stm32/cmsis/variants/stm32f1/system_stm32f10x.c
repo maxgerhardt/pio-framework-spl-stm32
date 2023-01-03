@@ -417,6 +417,11 @@ void SystemCoreClockUpdate (void)
   */
 static void SetSysClock(void)
 {
+#if defined(PIO_FRAMEWORK_SPL_HSE_IN_BYPASS_MODE)
+  /* enable HSE bypass mode instead of crystal oscillator mode */
+  RCC->CR |= RCC_CR_HSEBYP;
+#endif
+
 #ifdef SYSCLK_FREQ_HSE
   SetSysClockToHSE();
 #elif defined SYSCLK_FREQ_24MHz
